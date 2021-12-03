@@ -4,12 +4,16 @@
 
 ## Contenidos
 1. [Información General](#información-general)
-2. [Tecnologías utilizadas](#tecnologías)
-3. [Visualización](#visualización)
+2. [Funcionalidades](#Funcionalidades)
+3. [Tecnologías utilizadas](#tecnologías)
+4. [Visualización](#visualización)
 
 ## Información General
 ***
 Spanish Online es un proyecto propio que pretende ser útil para todos aquellos profesores de Enseñanza Online, en concreto para aquellos profesores enfocados en impartir clases, a Extranjeros, en Español.
+
+### Funcionalidades
+***
 
 ## Tecnologías
 ***
