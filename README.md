@@ -10,7 +10,7 @@
 
 ## Información General
 ***
-Spanish Online es un proyecto propio que pretende ser útil para todos aquellos profesores de Enseñanza Online, en concreto para aquellos profesores enfocados en impartir clases de Español a Extranjeros.
+Spanish Online es un proyecto propio que pretende ser útil a todos aquellos profesores de Enseñanza Online, en concreto para aquellos profesores enfocados en impartir clases de Español a Extranjeros.
 
 ## Funcionalidades
 ***
