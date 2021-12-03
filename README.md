@@ -20,24 +20,5 @@ Spanish Online es un proyecto propio que pretende ser útil para todos aquellos 
 ![291791_bootstrap_icon (1)](https://user-images.githubusercontent.com/74453440/144599498-57e53f37-14ca-4df9-8e01-02133479827d.png)
 ![scrollreveal (1)](https://user-images.githubusercontent.com/74453440/144599577-085ce7be-80ac-4447-8d9f-bcdc9da4d1f1.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![scrollreveal](https://user-images.githubusercontent.com/74453440/144598030-bfdfde5f-036a-4211-8658-e035be34f36d.png)
-### ScrollReveal
-
-
-
 ## Visualización
 ***
