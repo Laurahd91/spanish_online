@@ -9,4 +9,4 @@
 
 ## Información General
 ***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
+Spanish Online es un proyecto propio que pretende ser útil para todos aquellos profesores de Enseñanza Online, en concreto para aquellos profesores enfocados en impartir clases, a Extranjeros, en Español.
