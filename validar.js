@@ -13,6 +13,9 @@ function validar() {
   // Guardamos en una varible el patrón que debe seguier el correo electrónico
   let correo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/;
 
+  // Guardamos en una varible el patrón para comprobar si solo se introducen letras
+  const pattern = new RegExp("^[A-Z]+$", "i");
+
   // Comprobamos si se han rellenado todos los campos del formulario
   if (
     nombre.length == 0 ||
@@ -25,15 +28,15 @@ function validar() {
     $form.reset();
   } else {
     //Comprobamos si el nombre dado contiene números
-    if (!isNaN(nombre)) {
+    if (!pattern.test(nombre)) {
       alert("El nombre no puede contener números");
       $form.reset();
       //Comprobamos si los apellidos dados contienen números
-    } else if (!isNaN(apellidos)) {
+    } else if (!pattern.test(apellidos)) {
       alert("Los apellidos no pueden contener números");
       $form.reset();
       //Comprobamos si el teléfono dado contiene letras
-    } else if (isNaN(telefono)) {
+    } else if (pattern.test(telefono)) {
       alert("El número de teléfono no puede contener letras");
       $form.reset();
       //Comprobamos si el email dado sigue el patrón guardado en la variable correo
@@ -99,6 +102,9 @@ function comprar() {
   let cpostal = document.getElementById("cpostal").value;
   let localidad = document.getElementById("localidad").value;
 
+  // Guardamos en una varible el patrón para comprobar si solo se introducen letras
+  const pattern = new RegExp("^[A-Z]+$", "i");
+
   // Comprobamos si se han rellenado todos los campos del formulario
   if (
     nombre.length == 0 ||
@@ -111,21 +117,21 @@ function comprar() {
     $form.reset();
   } else {
     //Comprobamos si el nombre dado contiene números
-    if (!isNaN(nombre)) {
+    if (!pattern.test(nombre)) {
       alert("El nombre no puede contener números");
       $form.reset();
       //Comprobamos si los apellidos dados contienen números
-    } else if (!isNaN(apellidos)) {
+    } else if (!pattern.test(apellidos)) {
       alert("Los apellidos no pueden contener números");
       $form.reset();
 
       //Comprobamos si el código postal contiene letras
-    } else if (isNaN(cpostal)) {
+    } else if (pattern.test(cpostal)) {
       alert("El código postal no puede contener letras");
       $form.reset();
 
       //Comprobamos si la localidad tiene números
-    } else if (!isNaN(localidad)) {
+    } else if (!pattern.test(localidad)) {
       alert("La localidad no puede contener números");
       $form.reset();
 
