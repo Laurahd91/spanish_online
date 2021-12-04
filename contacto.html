@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Online | Contacto</title>
+    <!-- Añadimos la hoja de estilo -->
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <!-- Añadimos el favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="https://ibb.co/Hxd06Kh" />
+    <!-- Añadimos las fuentes de texto de googel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Creamos el contenedor del formulario-->
+    <div id="cuadro">
+        <!-- Creamos el formulario -->
+        <form id="form" action="" name="form">
+            <label id="titulo"> ¡CONTACTA CON NOSOTROS! </label>
+            <hr>
+            <div id="cuadro1">
+                <br /> <br />
+                <label id="subtitulo1">Nombre</label>
+                <br /> <br />
+                <input type="text" class="entrada" name="nombre" id="nombre" onkeypress="handle(event)" />
+                <br /> <br />
+                <label id="subtitulo2">Apellidos</label>
+                <br /> <br />
+                <input type="text" class="entrada" name="apellido" id="apellidos" onkeypress="handle(event)" />
+                <br /> <br />
+                <label id="subtitulo3">Teléfono</label>
+                <br /> <br />
+                <input type="text" class="entrada" name="telefono" id="telefono" onkeypress="handle(event)" />
+                <br /> <br />
+                <label id="subtitulo4">Email</label>
+                <br /> <br />
+                <input type="email" name="email" class="entrada" id="email" onkeypress="handle(event)" />
+                <br /> <br />
+                <label id="subtitulo5">Mensaje</label>
+                <br /> <br />
+                <textarea name="mensaje" cols="50" rows="10" id="textarea" onkeypress="handle(event)"></textarea>
+                <br /><br />
+                <input type="submit" value="Contactar" id="aceptar" onclick="validar()" />
+                <br /> <br />
+            </div>
+            <br /> <br />
+        </form>
+        <img id="marca" src="https://i.postimg.cc/wMtkbgm0/logotf.png"><br /><br />
+        <!-- Creamos un enlace que utilizaremos para enviar el formulario cumplimentado al correo de la empresa -->
+        <a href="mailto:spanishonline91@gmail.com" id="mail">mail</a>
+    </div>
+    <!-- Añadimos el script para validar y dar funcionalidad a nuestro formulario -->
+    <script src="js/validar.js"></script>
+</body>
+
+</html>

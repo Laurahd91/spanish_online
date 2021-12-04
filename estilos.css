@@ -1,0 +1,731 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Damos estilo al header y el menú */
+header {
+  height: 60px;
+  width: 100%;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 8px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+}
+
+nav {
+  height: inherit;
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  height: 48px;
+}
+
+.logo img {
+  height: inherit;
+  vertical-align: top;
+}
+
+.icono {
+  display: none;
+}
+
+.icono:hover {
+  cursor: pointer;
+}
+
+nav a {
+  height: inherit;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 30px 25px;
+}
+
+nav a:hover {
+  color: #434343;
+}
+
+#btn-menu {
+  visibility: hidden;
+}
+
+.icono1 {
+  display: none;
+}
+
+/* Damos estilo al contenedor Grid*/
+.container {
+  width: 100%;
+  height: 200vh;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "element1 element1 element2 element2"
+    "element3 element3 element3 element3"
+    "element4 element4 element4 element4"
+    "element5 element5 element5 element5"
+    "element6 element6 element6 element6"
+    "element7 element7 element7 element7";
+}
+
+/* Damos estilo al primer elemento */
+.element1 {
+  background-color: #ffffff;
+  text-align: center;
+  grid-area: element1;
+}
+
+.element1 .texto {
+  width: 90%;
+  height: 90%;
+  margin: 25% 5%;
+}
+
+.element1 .texto h2 {
+  font-size: 33px;
+  font-weight: 300;
+  margin-top: 13%;
+}
+
+.element1 .texto h4 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 5%;
+}
+
+.element1 .texto h2,
+h4 {
+  margin: 3%;
+  font-family: "Playfair Display", sans-serif;
+}
+
+/* Damos estilo al segundo elemento */
+.element2 {
+  color: rgb(67, 67, 67);
+  background-image: linear-gradient(
+      rgba(67, 67, 67, 0.5),
+      rgba(67, 67, 67, 0.5)
+    ),
+    url("https://images.pexels.com/photos/3059748/pexels-photo-3059748.jpeg?cs=srgb&dl=pexels-rfstudio-3059748.jpg&fm=jpg");
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  clip-path: polygon(1% 0, 100% 0, 100% 100%, 14% 100%);
+  grid-area: element2;
+}
+
+/* Damos estilo al tercer elemento */
+.element3 {
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-bottom: 60px;
+  grid-area: element3;
+}
+
+.element3 .texto {
+  font-size: 27px;
+  font-weight: 100;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+}
+
+.element3 .actividad {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: inherit;
+}
+
+.element3 .actividad .cards {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+.element3 .actividad .cards .card {
+  width: 80%;
+  height: 530px;
+  text-align: center;
+  padding: 20px;
+  margin: auto 10px auto 8px;
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.699);
+  transition: all 400ms ease;
+}
+
+.element3 .actividad .cards .card:hover {
+  box-shadow: 5px 10px 30px 0 rgba(0, 0, 0, 0.699);
+}
+
+.element3 .actividad .cards .card img {
+  width: 100%;
+  height: 40%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.element3 .actividad .cards .card p {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+/* Damos estilo al cuarto elemento */
+.element4 {
+  background-color: #ffffff;
+  grid-area: element4;
+  width: 100%;
+  height: 900px;
+  background-image: linear-gradient(
+      rgba(67, 67, 67, 0.7),
+      rgba(67, 67, 67, 0.7)
+    ),
+    url("https://images.pexels.com/photos/753695/pexels-photo-753695.jpeg?cs=srgb&dl=pexels-janson-k-753695.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.element4 .profesor {
+  width: 45%;
+  height: 55%;
+  background-image: linear-gradient(
+      rgb(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("https://images.pexels.com/photos/1251832/pexels-photo-1251832.jpeg?cs=srgb&dl=pexels-linkedin-sales-navigator-1251832.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: center;
+  object-fit: cover;
+  padding: 5px 5px 30px 5px;
+  border-top: 35px solid #ffffff;
+  border-right: 35px solid #ffffff;
+  border-left: 35px solid #ffffff;
+  border-bottom: 35px solid #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  left: 10%;
+  top: 10%;
+}
+
+.element4 .profesion {
+  width: 45%;
+  height: 45%;
+  background: #ffffff;
+  padding: 5px 5px 30px 5px;
+  border-top: 35px solid #ffffff;
+  border-right: 35px solid #ffffff;
+  border-left: 35px solid #ffffff;
+  border-bottom: 35px solid #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  left: 45%;
+  bottom: 10%;
+}
+
+.element4 .profesion .texto {
+  text-align: center;
+}
+
+.element4 .profesion .texto h2,
+h4 {
+  margin-top: 3%;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+}
+
+.element4 .profesion .texto h2 {
+  font-size: 30px;
+}
+
+.element4 .profesion .texto h4 {
+  font-size: 20px;
+}
+
+.element4 .profesion .texto p {
+  padding: 4%;
+  line-height: 1.7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* Damos estilo al quinto elemento */
+.element5 {
+  background-color: #ffffff;
+  grid-area: element5;
+}
+
+.element5 .texto {
+  width: 90%;
+  text-align: center;
+  margin: 70px auto;
+}
+
+.element5 .texto h2 {
+  font-size: 30px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 600;
+}
+
+.element5 .texto h4 {
+  font-size: 23px;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.element5 .texto p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.element5 .texto #aceptar {
+  width: 30%;
+}
+
+.element5 .texto #aceptar:hover {
+  width: 40%;
+}
+
+/* Damos estilo al sexto elemento */
+.element6 {
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  grid-area: element6;
+  margin-bottom: 80px;
+}
+
+.element6 .opiniones {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: inherit;
+}
+
+.element6 .opiniones .cards {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+.element6 .opiniones .cards .card {
+  width: 80%;
+  height: 530px;
+  text-align: center;
+  padding: 20px;
+  margin: auto 10px auto 8px;
+}
+
+.element6 .opiniones .cards .card img {
+  width: 50%;
+  height: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.element6 .opiniones .cards .card p {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+/* Damos estilo a los botones */
+#aceptar {
+  width: 70%;
+  height: 38px;
+  margin-top: 38px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  background: #ffffff;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+#aceptar:hover {
+  width: 80%;
+  cursor: pointer;
+  background: #000000;
+  border: none;
+  color: #ffffff;
+  transition: all 1s ease;
+  opacity: 0.8;
+}
+
+/* Damos estilo al séptimo elemento */
+.element7 {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  padding-bottom: 0.1px;
+  grid-area: element7;
+}
+
+.element7 .contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.element7 .contact-us {
+  margin-top: 30px;
+  height: 80px;
+}
+
+.element7 .brand {
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Open sans", sans-serif;
+}
+
+.element7 .brand + p {
+  font-weight: 500;
+  font-family: "Open sans", sans-serif;
+}
+
+.element7 .social-media {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.element7 .social-media-icon {
+  display: inline-block;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.element7 .social-media-icon:hover {
+  background-color: #434343;
+  transition: 1.5s;
+}
+
+.element7 .social-media-icon i {
+  font-size: 35px;
+  line-height: 60px;
+}
+
+.element7.social-media-icon i img {
+  width: 45%;
+  height: 45%;
+}
+
+.element7 .line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 35px;
+}
+
+/* Utilizamos media queries para obtener un diseño responsive */
+@media (max-width: 1600px) {
+  .element3 .actividad {
+    height: 95%;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  .element3 .actividad .cards {
+    width: 80%;
+    flex-direction: column;
+  }
+  .element3 .actividad .cards .card {
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .element3 .actividad .cards .card img {
+    height: 45%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .element4 .profesor {
+    width: 60%;
+    height: 50%;
+    left: 10%;
+  }
+
+  .element4 .profesion {
+    width: 50%;
+    height: 50%;
+    left: 40%;
+  }
+
+  .element4 .profesion .texto h2,
+  h4 {
+    margin-top: 2%;
+  }
+
+  .element4 .profesion .texto h2 {
+    font-size: 23px;
+  }
+
+  .element4 .profesion .texto h4 {
+    font-size: 18px;
+  }
+
+  .element4 .profesion .texto p {
+    font-size: 15px;
+  }
+
+  .element5 .texto #aceptar {
+    width: 60%;
+  }
+
+  .element5 .texto #aceptar:hover {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .element6 .opiniones {
+    height: 95%;
+    text-align: center;
+  }
+
+  .element6 .opiniones .cards {
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .element6 .opiniones .cards .card {
+    margin: 20px auto;
+    width: 70%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .icono {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.589),
+      0 0 0 100vh rgba(0, 0, 0, 0.658);
+    top: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20%;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    clip-path: circle(91.5% at 8% 4%);
+    transition: all 1s;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+    width: 85%;
+    height: 70%;
+  }
+
+  #btn-menu:checked ~ .icono {
+    display: none;
+  }
+
+  #btn-menu:checked ~ .icono1 {
+    display: block;
+    z-index: 1;
+  }
+
+  nav .menu a {
+    text-decoration: none;
+    height: 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+
+  .element4 .profesor {
+    width: 80%;
+    left: 10%;
+  }
+
+  .element4 .profesion {
+    width: 80%;
+    left: 10%;
+  }
+
+  .element6 .opiniones .cards {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .element6 .opiniones .cards {
+    width: 90%;
+  }
+
+  .element6 .opiniones .card {
+    width: 90%;
+  }
+
+  .element7 .contact-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .element7 .social-media {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .element7 .contact-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .element7 .social-media {
+    justify-content: center;
+  }
+
+  #btn-menu:checked ~ .menu {
+    height: 95%;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.589),
+      0 0 0 100vh rgba(0, 0, 0, 0.658);
+  }
+
+  nav .menu a {
+    height: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .element1 .texto h2 {
+    font-size: 27px;
+  }
+
+  .element1 .texto h4 {
+    font-size: 20px;
+  }
+
+  .element3 .texto {
+    font-size: 20px;
+  }
+
+  .element3 .actividad .cards {
+    width: 90%;
+  }
+  .element3 .actividad .cards .card {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .element3 .actividad .cards .card img {
+    height: 45%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .element3 .actividad .cards .card p {
+    font-size: 14px;
+  }
+
+  .element4 .profesion {
+    width: 80%;
+    height: 54%;
+    left: 10%;
+    bottom: 14%;
+  }
+
+  .element5 .texto #aceptar {
+    font-size: 11px;
+    width: 80%;
+  }
+
+  .element5 .texto #aceptar:hover {
+    width: 90%;
+  }
+
+  .element6 .opiniones .cards {
+    height: 100%;
+    width: 100%;
+  }
+
+  .element6 .opiniones .card {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 10px 10px 8px;
+  }
+
+  .element6 .opiniones .cards .card img {
+    width: 90%;
+    height: 50%;
+  }
+
+  .element7 .contact-footer {
+    width: 100%;
+  }
+
+  .element7 .social-media {
+    width: 100%;
+    margin-left: -6%;
+  }
+}

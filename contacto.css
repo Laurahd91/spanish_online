@@ -1,0 +1,141 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Damos diseño al body del documento HTML */
+body {
+  background-image: linear-gradient(
+      rgba(67, 67, 67, 0.7),
+      rgba(67, 67, 67, 0.7)
+    ),
+    url("https://images.pexels.com/photos/753695/pexels-photo-753695.jpeg?cs=srgb&dl=pexels-janson-k-753695.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: grid;
+}
+
+/* Damos diseño al contenedor del formulario*/
+#cuadro {
+  width: 42%;
+  background: #000000;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 5px 5px 30px 5px;
+  border-top: 35px solid #000000;
+  border-right: 35px solid #000000;
+  border-left: 35px solid #000000;
+  border-bottom: 10px solid #000000;
+  border-radius: 6px;
+  opacity: 0.75;
+  text-align: center;
+}
+
+#cuadro1 {
+  text-align: center;
+}
+
+/* Damos diseño a las cajas de los parámetros de entrada */
+.entrada {
+  width: 50%;
+  height: 30px;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+/* Damos diseño al botón */
+#aceptar {
+  width: 50%;
+  height: 35px;
+  margin-top: 38px;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  border-radius: 6px;
+  border: solid 1px #ffff;
+  background: #000000;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  color: #ffff;
+  font-size: 16.5px;
+}
+
+#aceptar:hover {
+  color: #ffff !important;
+  background: #434343;
+  transition: all 1.5s ease;
+  cursor: pointer;
+}
+
+/* Damos diseño a los títulos*/
+#titulo {
+  font-weight: 400;
+  font-size: 28px;
+  font-family: "Playfair Display", sans-serif;
+}
+
+/* Damos diseño a los de cada parámetro de entrada*/
+#subtitulo1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#subtitulo2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#subtitulo3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#subtitulo4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#subtitulo5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#subtitulo6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+textarea {
+  width: 55%;
+  resize: none;
+}
+
+/* Damos un opacity 0 para que no se vea dicho elemento en el formulario*/
+#mail {
+  opacity: 0;
+}
+
+/* Utilizamos media queries para obtener un diseño responsive */
+@media (max-width: 1000px) {
+  #cuadro {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  #cuadro {
+    width: 70%;
+  }
+}
+
+@media (max-width: 350px) {
+  #cuadro {
+    width: 60%;
+  }
+
+  .entrada {
+    width: 90%;
+  }
+
+  textarea {
+    width: 90%;
+  }
+}

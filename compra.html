@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spanish Online | Compra</title>
+  <!-- Añadimos la hoja de estilo -->
+  <link rel="stylesheet" type="text/css" href="css/compra.css">
+  <!-- Añadimos el favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="https://ibb.co/Hxd06Kh" />
+  <!-- Añadimos las fuentes de texto de googel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Creamos el contenedor del formulario-->
+  <div class="cuadro" id="cuadro">
+    <!-- Creamos el formulario -->
+    <form name="compra" id="formulario">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <br>
+        <label for="nombre" class="titulo">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" class="entrada" maxlength="30" onkeypress="handle(event)"><br><br>
+        <label for="apellidos" class="titulo">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" class="entrada" maxlength="60"
+          onkeypress="handle(event)"><br><br>
+        <label for="direccion" class="titulo">Dirección</label><br>
+        <input type="text" id="direccion" name="direccion" class="entrada" maxlength="60"
+          onkeypress="handle(event)"><br><br>
+        <label for="cpostal" class="titulo">Código Postal</label><br>
+        <input type="text" id="cpostal" name="cpostal" class="entrada" pattern="[0-9]{5}"
+          onkeypress="handle(event)"><br><br>
+        <label for="localidad" class="titulo">Localidad</label><br>
+        <input type="text" id="localidad" name="localidad" class="entrada" onkeypress="handle(event)"><br><br>
+        <br><br>
+        <label><input type="checkbox" id="cbox1" value="primero_checkbox"> Clases Individuales 8€</label><br><br>
+        <label><input type="checkbox" id="cbox2" value="segundo_checkbox"> Clases Grupales 10€</label><br><br>
+        <label><input type="checkbox" id="cbox3" value="tercero_checkbox"> Clases para Empresas 12€</label><br><br>
+        <label><input type="checkbox" id="cbox4" value="cuarto_checkbox"> Clases para Escuelas 13€</label><br><br>
+        <br><br>
+      </fieldset>
+      <input type="button" value="Validar" id="aceptar" onclick="comprar()" />
+    </form>
+  </div>
+
+  <!-- Creamos el contenedor para mostrar el resultado -->
+  <div class="resultado">
+    <form>
+
+      <fieldset>
+        <legend>Compra realizada</legend>
+        <br />
+        <h3>Los datos de su compra son:</h3>
+        <br />
+        <!-- Lugar donde se mostrará el resultado -->
+        <p id="resultado"> </p>
+        <br />
+
+      </fieldset>
+    </form>
+  </div>
+  <!-- Añadimos el script para validar los datos del formulario -->
+  <script src="js/validar.js"></script>
+</body>
+
+</html>

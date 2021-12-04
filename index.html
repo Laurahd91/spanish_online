@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Online</title>
+    <!-- Añadimos la hoja de estilo -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Añadimos el favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="https://ibb.co/Hxd06Kh" />
+    <!-- Añadimos las fuentes de texto de googel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Añadimos los scripts de la librería scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Creamos el menú de navegación -->
+        <nav>
+            <!-- Posicionamos el logo y el resto de elementos del menú -->
+            <div class="logo">
+                <img id="marca" src="https://i.postimg.cc/wMtkbgm0/logotf.png" alt="logo">
+            </div>
+            <input type="checkbox" id="btn-menu">
+            <div class="menu" id="menu">
+                <a href="index.html">Inicio</a> <a href="#clases">Clases Online</a> <a href="#historia">Sobre
+                    mí</a> <a href="#gratis">Clase Gratuíta</a> <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="icono" id="open">
+                <label for="btn-menu"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFJJREFUSEtjZKAxYKSx+QyjFhAMYfoH0c/v3/8TdBYeBeycnCiOxvABzS2gxPXY9NI/DmjuA5rHAc0toHkQDX0LaB4HNLdg6MfBqA/QQ4DmpSkASlQYGUi8p8cAAAAASUVORK5CYII="
+                        alt="menu" /></label>
+            </div>
+            <div class="icono1" id="cerrar">
+                <label for="btn-menu"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAM5JREFUSEvtlMsNwkAMRJ87oJNQAnQAlYYOSAnQCR0YWXKkZPH+DisuyTHyzlvP2CsM/mSwPgeg6vB/LVLVG7CIyCe6qqqegIuIPHKtZDtw8Rl4AdcU4uJP4Azcc5ASwG63AFMKScTf3kXYZTEDF9pB3Ir15kVxq62GHEDsnNlSFW8CWFECsV9N4r2A1RY7FwYfTVKrRVvPTecn+O4x3VizC9SFwunq6qA0itF05ZaxZdHCQBNI/6K5ReOeiuoz2VhQnaJGnWzZAag6ONyiL3UxahlGNu2NAAAAAElFTkSuQmCC"
+                        alt="cerrar" /></label>
+            </div>
+        </nav>
+    </header>
+    <!-- Generamos el contenedor para posicionar los elementos dentro del Grid -->
+    <section class="container">
+        <!-- Creamos la sección de inico de página, compuesto por dos elementos -->
+        <div class="element1 element" id="inicio">
+            <div class="texto">
+                <h2>Las clases de Español online que necesitas</h2>
+                <h4>Aprende español con alegría, creatividad y diversión</h4>
+            </div>
+        </div>
+        <div class="element2 element" id="imagen"></div>
+        <!-- Creamos la sección para mostrar los servicios ofertados -->
+        <div class="element3 element">
+            <div class="clases">
+                <div class="texto">
+                    <h2>¡Únete a Spanish Online!</h2>
+                </div>
+                <div class="actividad" id="clases">
+                    <div class="cards">
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/7034453/pexels-photo-7034453.jpeg?cs=srgb&dl=pexels-george-milton-7034453.jpg&fm=jpg"
+                                alt="individual">
+                            <h2>Clases Individuales</h2>
+                            <p>¿Buscas clases para aprender español de forma divertida?</p>
+                            <p> Si quieres clases particulares para tener una atención personalizada, este plan es
+                                para tí.</p>
+                            <input type="button" value="Comprar" onclick="location.href='compra.html'" id="aceptar" />
+                        </div>
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/5940827/pexels-photo-5940827.jpeg?cs=srgb&dl=pexels-kampus-production-5940827.jpg&fm=jpg"
+                                alt="grupal">
+                            <h2>Clases Grupales</h2>
+                            <p>¿Buscas clases que entren en tu presupuesto?</p>
+                            <p> Si no te importa tener que adaptarte al horario de otros compañeros, este plan es
+                                para tí.</p>
+                            <input type="button" value="Comprar" onclick="location.href='compra.html'" id="aceptar" />
+                        </div>
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/5439486/pexels-photo-5439486.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-5439486.jpg&fm=jpg"
+                                alt="empresa">
+                            <h2>Clases para Empresas</h2>
+                            <p>¿Quieres que tus alumnos aprendan español?</p>
+                            <p> Si buscas una preparadora acreditada por el Instituto Cervantes, este plan es para
+                                tí.</p>
+                            <input type="button" value="Comprar" onclick="location.href='compra.html'" id="aceptar" />
+                        </div>
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/5212687/pexels-photo-5212687.jpeg?cs=srgb&dl=pexels-max-fischer-5212687.jpg&fm=jpg"
+                                alt="escuela">
+                            <h2>Clases para Escuelas</h2>
+                            <p>¿Quieres que tus trabajadores aprendan español?</p>
+                            <p> Si buscas una preparadora acreditada por el Instituto Cervantes, este plan es para
+                                tí.</p>
+                            <input type="button" value="Comprar" onclick="location.href='compra.html'" id="aceptar" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Creamos la sección dedicada a la bibliografía del maestro -->
+        <div class="element4 element" id="historia">
+            <div class="profesor"></div>
+            <div class="profesion">
+                <div class="texto">
+                    <h2>Soy profesora de español</h2>
+                    <h4>Acreditada DELE por el Instituto Cervantes</h4>
+                    <p>Soy una persona activa y curiosa, que disfruta conociendo a gente de diferentes lugares del
+                        mundo. Me apasiona la experiencia de enseñar, ya que en cada clase aprendo mucho sobre mis
+                        alumnos: su cultura, su estilo de vida, sus tradiciones, etc. </p>
+                </div>
+            </div>
+        </div>
+        <!-- Creamos la sección de pruba gratis -->
+        <div class="element5 element" id="gratis">
+            <div class="texto">
+                <h2>¿Te gustaría que las clases de Español fuesen un éxito?</h2>
+                <h4>Podrás aprender español con una metodología diferente.</h4>
+                <p>Solicita tu clase de prueba gratuita de 30 minutos para
+                    conocernos. Dinos lo que buscas y necesitas.</p>
+                <input type="button" value="¡QUIERO MI CLASE DE PRUEBA!" onclick="location.href='reserva.html'"
+                    id="aceptar" />
+            </div>
+        </div>
+        <!-- Creamos la sección de opiniones -->
+        <div class="element6 element" id="opiniones">
+            <div class="opiniones">
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1326946/pexels-photo-1326946.jpeg?cs=srgb&dl=pexels-george-dolgikh-giftpunditscom-1326946.jpg&fm=jpg"
+                            alt="alumno1">
+                        <h2>Mary Fox</h2>
+                        <p> Antes de empezar a trabajar con Alicia, yo no hablaba español. Tenía ganas de aprender, pero
+                            tenía miedo de ir a clases y aburrirme. Para mí ha sido una experiencia muy interesante.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/2796273/pexels-photo-2796273.jpeg?cs=srgb&dl=pexels-mehrad-vosoughi-2796273.jpg&fm=jpg"
+                            alt="alumno2">
+                        <h2>Charles Smith</h2>
+                        <p> Mi mujer y yo somos ingleses. Decidimos llevar a nuestros hijos con Alicia para que pudieran
+                            aprender español porque nos encanta el país. </p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1462631/pexels-photo-1462631.jpeg?cs=srgb&dl=pexels-anastasiya-gepp-1462631.jpg&fm=jpg"
+                            alt="alumno3">
+                        <h2>Jessica Adams</h2>
+
+                        <p> Tengo clases de español con Alicia desde hace algunos meses. Las clases me encantan. Los
+                            cursos en línea de Alicia son excelentes porque son muy flexibles y fáciles de organizar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ECreamos el footer de la página -->
+        <div class="element7" id="footer">
+            <div class="contact-footer">
+                <div class="contact-us">
+                    <img id="marca" src="https://i.postimg.cc/wMtkbgm0/logotf.png" alt="logo">
+                </div>
+                <div class="social-media">
+                    <a href="https://es-es.facebook.com/" class="social-media-icon"> <i><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOxJREFUSEvtVNERwUAQfesDwQcVSAk6QCVSghKogBK0oIOkAkqgAz/uXD5uzRGZjAk5kUww7mvvbu69fW/3llDyopLx8VkEUkq3xrwAMADgGvUMBM1Wa/TICWsFEfgGQDcJVhiBOh5XIJrcZ1oYwUkIn4BhRLCuK+VRr3fIahJri5QQHIMxzxvt9iwL3NxXSxBK6THQv2TKHGdMgM9EvjnWQOA4ziVOW08V3PmejpBh19sEmmicW0EoxFJfP5Up1q2DzHbPwM4ENa2n9U5nm8ui5KPv7KK/gup/8m/VwGZyvjyL8oIm31mP67xkZ0sgiBl+6QGVAAAAAElFTkSuQmCC"
+                                alt="face" /></i>
+                    </a> <a href="https://mobile.twitter.com/i/flow/login" class="social-media-icon"> <i><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaJJREFUSEvdVe1RwkAQ3ZcZEi4wo1QgHRgqECswVqBWAFYgVGBKoANDBdKB0EGoAJghicHx1jknMCGfDAx/uJ93u+/tvt28gM58cGZ8ujACXiyu0Woty2RTMZt6vUfMNhFZROQRMDKEGKq8yPdto9Fwtxh7EkVB4EFKW282p0Uk30EwAdFdzrvKsZjotW6aToZgs15brGlfRLSUwKMQYpIGScQU8U+JeQZmZ1tkugNOMDu1KBomJVPtE/BRIuFKAnayuDSB0u4hBeACcEHk/TJ3QPReQjA2TFPNZnd2BGp4P7VamzVNkdwc9X0wD41GY1BIsDGMxVHAcVJ6wOo6s0VHV6/ApOykN3CPIN4StT1XR3QyN0yznc7LWEW8KU9EtDesKsI8eTISqYswDLsa82cVYOp9rkeRlecCuWYX+f6AgLdDSSRwn/dh5nawBf33HF13CFByFR4AL7oQo6KA3A5imXoVc1gB6JeB73UQgyqTuj1AmrEE+kIIryo208EmDJ9Zyi4Byoq3ZDMmUjbuMuAeApzwtKoaTnu/sF/maWLkZ/8BFKqkGccwIW8AAAAASUVORK5CYII="
+                                alt="twi" /></i>
+                    </a> <a href="https://www.instagram.com/" class="social-media-icon"> <i><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfdJREFUSEvNVUFO20AUfW8WnnrMAjbdxpyA9AS0m24bDlAp3IAbEE5QsWPXcALKsqumJyA9QaNeIFAlNhO186sxdpi4IXEqRXQky9L4+7///p/3htjy4pbz43kA8jxPlXOnINsA/LNqDSEypMh5tLMzrAf+xWCW510R+egDBfhK4NYnWIpAtgXYJXDov5M8juK4H8YuAMwmk7YodeMTa2s73Nu7bTKjgrHIJwAHdO5VyGQBwE6nfZCdyNq0SfJZnr8XkTMAd448UiLfIXKpk6RbFbYIkGUjAUYvjHldr9xOpx0odVDsOzfUSXJ9P5m8pVKfAfzQxrTus2xAoKWN2X8KQAicR8acVAEyHu/OtP5SHzaBgQIufon8VEq9jOL4sgQ41MbMC68zEIic6STpVQA2y/yAU4h0dZL4PqNgQ/YJ3ETGvKliNwYoE11B5KhKXiWbn7bg278A9ECehpRrrRuHjP9LAN/r7bWoGOjDkFvlkK/9Xtn/DwJ8C490oxY9cUwHXqWhNpapvQnAaqE9Gp8XWnFkw1UCpNqYdLnQHqziXWTtfhOrCJOXfrTaKiqz8yr9TR7HcTzawOyuvNpXml0wwMKuPZB4uyaX2jVFCs8SoHivteu5Sr1tkycg/Y+tNSzuAAzoXK/RhdOkJZvEPM+dvEmF62L/AMLPYygVp7o+AAAAAElFTkSuQmCC"
+                                alt="insta" /></i>
+                    </a>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
