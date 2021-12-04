@@ -4,7 +4,7 @@ Swal.fire({
     icon: 'success',
     title: 'Su clase de prueba ha sido reservada correctamente.',
     showConfirmButton: true,
-    confirmButtonColor: " #3c1053", 
+    confirmButtonColor: " #000000", 
     type: "success"}).then(okay => {
      if (okay) {
       window.location.href = "index.html","_self";
