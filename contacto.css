@@ -106,6 +106,8 @@ body {
 textarea {
   width: 55%;
   resize: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
 
 /* Damos un opacity 0 para que no se vea dicho elemento en el formulario*/
