@@ -562,7 +562,7 @@ h4 {
     background: rgba(0, 0, 0, 0.85);
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.589),
       0 0 0 100vh rgba(0, 0, 0, 0.658);
-    top: 5%;
+    top: 4%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -576,8 +576,8 @@ h4 {
 
   #btn-menu:checked ~ .menu {
     margin: 0;
-    width: 85%;
-    height: 70%;
+    width: 95%;
+    height: 95%;
   }
 
   #btn-menu:checked ~ .icono {
@@ -592,8 +592,7 @@ h4 {
   nav .menu a {
     text-decoration: none;
     height: 2%;
-    margin-top: 1%;
-    margin-bottom: 2%;
+    padding: 23px 25px;
   }
 
   .element4 .profesor {
@@ -610,7 +609,6 @@ h4 {
     width: 80%;
   }
 }
-
 @media (max-width: 800px) {
   .element6 .opiniones .cards {
     width: 90%;
