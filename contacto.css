@@ -131,6 +131,10 @@ textarea {
   .entrada {
     width: 80%;
   }
+  
+  .textarea {
+    width: 80%;
+  }
 }
 
 @media (max-width: 350px) {
