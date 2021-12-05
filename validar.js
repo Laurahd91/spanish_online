@@ -107,8 +107,8 @@ function comprar() {
   let cpostal = document.getElementById("cpostal").value;
   let localidad = document.getElementById("localidad").value;
 
-  // Guardamos en una varible el patrón para comprobar si solo se introducen letras
-  const pattern = new RegExp("^[A-Z]+$", "i");
+   // Guardamos en una varible el patrón para comprobar si solo se introducen letras
+   const pattern = new RegExp(/^[a-zA-Z\u00C0-\u017F\s]+$/);
 
   // Comprobamos si se han rellenado todos los campos del formulario
   if (
