@@ -16,6 +16,10 @@ function validar() {
   // Guardamos en una varible el patrón para comprobar si solo se introducen letras
   const pattern = new RegExp("^[A-Z]+$", "i");
 
+  // Creamos las variables donde se guardarán los datos sin ñ o tílde
+  let nombre_completo = limpiar(removeAccents(nombre));
+  let apellido_completo = limpiar(removeAccents(apellidos));
+
   // Comprobamos si se han rellenado todos los campos del formulario
   if (
     nombre.length == 0 ||
@@ -26,13 +30,14 @@ function validar() {
   ) {
     alert("No puede dejar ningún campo vacío");
     $form.reset();
+    exit();
   } else {
     //Comprobamos si el nombre dado contiene números
-    if (!pattern.test(nombre)) {
+    if (!pattern.test(nombre_completo)) {
       alert("El nombre no puede contener números");
       $form.reset();
       //Comprobamos si los apellidos dados contienen números
-    } else if (!pattern.test(apellidos)) {
+    } else if (!pattern.test(apellido_completo)) {
       alert("Los apellidos no pueden contener números");
       $form.reset();
       //Comprobamos si el teléfono dado contiene letras
@@ -115,6 +120,7 @@ function comprar() {
   ) {
     alert("No puede dejar ningún campo vacío");
     $form.reset();
+    exit();
   } else {
     //Comprobamos si el nombre dado contiene números
     if (!pattern.test(nombre)) {
@@ -213,4 +219,15 @@ function handle(event) {
     // Reiniciamos el formulario
     form.reset();
   }
+}
+
+// Eliminamos tíldes y acentos
+const removeAccents = (str) => {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+} 
+
+// Eliminamos la ñ 
+function limpiar(text){
+  text = text.replace(/[ñ]/, 'n');
+  return text;
 }
