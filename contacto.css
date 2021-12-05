@@ -130,7 +130,7 @@ textarea {
     width: 80%;
   }
   
-  .textarea {
+  #textarea {
     width: 80%;
   }
 }
@@ -144,7 +144,7 @@ textarea {
     width: 90%;
   }
 
-  textarea {
+  #textarea {
     width: 90%;
   }
 }
