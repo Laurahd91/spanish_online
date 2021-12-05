@@ -143,7 +143,7 @@ function comprar() {
       $form.reset();
 
       //Comprobamos si el código postal tiene menos de 5 dígitos
-    } else if (cpostal.length < 5) {
+    } else if (cpostal.length < 5 || cpostal.length > 5) {
       alert("El código postal debe contener 5 dígitos");
       $form.reset();
 
