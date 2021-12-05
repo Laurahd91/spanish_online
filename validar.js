@@ -14,11 +14,7 @@ function validar() {
   let correo = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/;
 
   // Guardamos en una varible el patrón para comprobar si solo se introducen letras
-  const pattern = new RegExp("^[A-Z]+$", "i");
-
-  // Creamos las variables donde se guardarán los datos sin ñ o tílde
-  let nombre_completo = limpiar(removeAccents(nombre));
-  let apellido_completo = limpiar(removeAccents(apellidos));
+  const pattern = new RegExp(/^[a-zA-Z\u00C0-\u017F\s]+$/);
 
   // Comprobamos si se han rellenado todos los campos del formulario
   if (
@@ -30,30 +26,33 @@ function validar() {
   ) {
     alert("No puede dejar ningún campo vacío");
     $form.reset();
-    exit();
   } else {
     //Comprobamos si el nombre dado contiene números
-    if (!pattern.test(nombre_completo)) {
+    if (!pattern.test(nombre)) {
       alert("El nombre no puede contener números");
       $form.reset();
+
       //Comprobamos si los apellidos dados contienen números
-    } else if (!pattern.test(apellido_completo)) {
+    } else if (!pattern.test(apellidos)) {
       alert("Los apellidos no pueden contener números");
       $form.reset();
+
       //Comprobamos si el teléfono dado contiene letras
     } else if (pattern.test(telefono)) {
       alert("El número de teléfono no puede contener letras");
       $form.reset();
+
       //Comprobamos si el email dado sigue el patrón guardado en la variable correo
     } else if (correo.test(email)) {
       alert("La dirección de correo introducida es incorrecta");
       $form.reset();
+
       //Comprobamos si el número de teléfono dado contiene 9 dígitos
     } else if (telefono.length < 9 || telefono.length > 9) {
       alert("El número de teléfono debe contener 9 dígitos");
       $form.reset();
     } else {
-      //Si el formulario se rellena de manera correcta, se llamará a la función amilSend
+      //Si el formulario se rellena de manera correcta, se llamará a la función mailSend
       mailSend();
     }
   }
@@ -63,6 +62,7 @@ function validar() {
 function mailSend() {
   //Creamos la variable formulario
   let $form = document.querySelector("#form");
+
   //Creamos la variable botón
   const $buttonMailto = document.querySelector("#mail");
 
@@ -126,6 +126,7 @@ function comprar() {
     if (!pattern.test(nombre)) {
       alert("El nombre no puede contener números");
       $form.reset();
+
       //Comprobamos si los apellidos dados contienen números
     } else if (!pattern.test(apellidos)) {
       alert("Los apellidos no pueden contener números");
@@ -167,22 +168,22 @@ function comprar() {
       //Damos valor a las variables según el checkbox seleccionado
       if (document.getElementById("cbox1").checked) {
         individual = 8;
-        producto1 = "Clases individuales, ";
+        producto1 = "Clases individuales  ";
       }
 
       if (document.getElementById("cbox2").checked) {
         grupal = 10;
-        producto2 = "Clases grupales, ";
+        producto2 = "Clases grupales  ";
       }
 
       if (document.getElementById("cbox3").checked) {
         empresa = 12;
-        producto3 = "Clases para empresas, ";
+        producto3 = "Clases para empresas  ";
       }
 
       if (document.getElementById("cbox4").checked) {
         escuela = 13;
-        producto4 = "Clases para escuelas, ";
+        producto4 = "Clases para escuelas  ";
       }
 
       //Guardamos los resultados en nuevas variables
@@ -195,12 +196,12 @@ function comprar() {
         nombre +
         " " +
         apellidos +
-        ", le comunicamos que su compra: " +
+        ", le comunicamos que su compra (" +
         producto_final +
-        " por importe de " +
+        "), por importe de " +
         resultado +
         "€" +
-        " se ha relizado correctamente.";
+        ", se ha relizado correctamente.";
 
       $form.reset();
     } else {
@@ -221,13 +222,3 @@ function handle(event) {
   }
 }
 
-// Eliminamos tíldes y acentos
-const removeAccents = (str) => {
-  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-} 
-
-// Eliminamos la ñ 
-function limpiar(text){
-  text = text.replace(/[ñ]/, 'n');
-  return text;
-}
