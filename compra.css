@@ -46,15 +46,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-weight: 600;
-  font-size: 18px;
-}
-
-.entradados {
-  width: 100px;
-  height: 25px;
-  border-radius: 6px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-size: 15px;
 }
 
 /* Damos diseño al título del formulario */
