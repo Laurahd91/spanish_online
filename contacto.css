@@ -46,6 +46,7 @@ body {
   border-radius: 6px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
+  font-size:15px;
 }
 
 /* Damos diseño al botón */
@@ -125,6 +126,10 @@ textarea {
 @media (max-width: 800px) {
   #cuadro {
     width: 70%;
+  }
+  
+  .entrada {
+    width: 80%;
   }
 }
 
